@@ -1,0 +1,464 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat Regular;
+    src: url(Fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(Fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto Light;
+    src: url(Fonts/Roboto-LightItalic.ttf);
+}
+
+html {
+    height: 100%;
+    body {
+        height: 100%;
+    }
+}
+
+header {
+    position: fixed;
+    z-index: 545;
+    width: 100%;
+    .fixed-top {
+        width: 100%;
+        max-width: 1140px;
+        margin: 25px auto;
+        font-size: 23px;
+        transition: 0.2s all linear;
+        #navbarToggleExternalContent {
+            text-align: center;
+            .nav-item {
+                padding: 0 10px;
+                .nav-link {
+                    color: rgb(204, 207, 207);
+                }
+            }
+        }
+    }
+    .fixed-top.change-fix-top {
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-top: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        max-width: 100%;
+        padding: 0.5% 21%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#home {
+    background: url("PNG/Background-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    object-fit: contain;
+    padding-bottom: 180px;
+    .title {
+        margin: 0 0;
+        padding: 250px 0;
+        i {
+            font-size: 70px;
+            font-family: 'Droid Serif';
+            color: white;
+        }
+        h1 {
+            padding: 50px 0;
+            font-size: 90px;
+            text-transform: uppercase;
+            font-family: 'Montserrat';
+            color: white;
+        }
+        .btn {
+            font-size: 25px;
+            font-family: 'Montserrat';
+            padding: 10px 40px;
+            color: azure;
+            background-color: #fed136;
+        }
+    }
+}
+
+#services {
+    padding: 60px 0;
+    .services-head {
+        h1 {
+            font-family: 'Montserrat', serif;
+        }
+    }
+    .services-content {
+        .row {
+            .col-md-4 {
+                margin-top: 50px;
+                h3 {
+                    font-family: 'Montserrat', serif;
+                }
+                p {
+                    font-family: 'Roboto', serif;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+#ourPortfolio {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    .our-head {
+        h1 {
+            font-family: 'Montserrat', serif;
+        }
+    }
+    .our-content {
+        padding-top: 50px;
+        .col-md-4 {
+            margin-bottom: 30px;
+            h5 {
+                font-family: 'Montserrat', serif;
+            }
+            i {
+                font-family: 'Droid Serif';
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+#aboutUs {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    .about-us-head {
+        h1 {
+            font-family: 'Montserrat', serif;
+        }
+        p {
+            font-family: 'Roboto Slab', serif;
+        }
+    }
+    .about-us-content {
+        position: relative;
+        &:before {
+            top: 0px;
+            bottom: 0;
+            position: absolute;
+            content: " ";
+            width: 3px;
+            background-color: #f1f1f1;
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+        .row {
+            padding: 50px 0;
+            .col-sm-4 {
+                padding: 300px 0;
+                p {
+                    font-family: 'Roboto', serif;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+#ourAmazingTeam {
+    background-color: #f9f9f9;
+    padding: 50px;
+    .our-head {
+        padding-bottom: 50px;
+        h1 {
+            font-family: 'Montserrat', serif;
+        }
+    }
+    .lead {
+        padding-top: 50px;
+        font-family: 'Roboto';
+    }
+}
+
+#contact {
+    #envato {
+        margin-top: 50px;
+        .photos {
+            margin-bottom: 50px;
+            img {
+                padding: 0 30px;
+            }
+        }
+    }
+    .map {
+        background-color: #222222;
+        background-image: url('PNG/MapImage.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        position: center fixed;
+        position: relative;
+        object-fit: contain;
+        padding-bottom: 100px;
+        .contact-head {
+            padding: 50px;
+            h1 {
+                margin-top: 50px;
+                color: azure;
+                font-family: 'Montserrat', serif;
+            }
+            i {
+                color: azure;
+                margin-bottom: 50px;
+                opacity: 0.5;
+                font-family: 'Roboto Slab';
+            }
+        }
+        .contact-content {
+            .golden-form {
+                .form-element {
+                    .btn {
+                        font-size: 25px;
+                        font-family: 'Montserrat';
+                        padding: 10px 40px;
+                        color: azure;
+                        background-color: #fed136;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    #home {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        .title {
+            margin: 0 0;
+            padding-top: 170px;
+            padding-bottom: 100px;
+            i {
+                font-size: 70px;
+                font-family: 'Droid Serif';
+                color: white;
+            }
+            h1 {
+                padding: 50px 0;
+                font-size: 90px;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+                color: white;
+            }
+            .btn {
+                font-size: 25px;
+                font-family: 'Montserrat';
+                padding: 10px 40px;
+                color: azure;
+                background-color: #fed136;
+            }
+        }
+    }
+    .about-us-content {
+        position: relative;
+        &:before {
+            margin-bottom: 150px;
+        }
+        .row {
+            .col-sm-4 {
+                padding: 50px 0;
+                p {
+                    font-family: 'Roboto Slab', serif;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    #home {
+        padding-bottom: 50px;
+        padding-top: 50px;
+        .title {
+            margin: 0 0;
+            padding-top: 110px;
+            padding-bottom: 100px;
+            i {
+                font-size: 60px;
+                font-family: 'Droid Serif';
+                color: white;
+            }
+            h1 {
+                padding: 50px 0;
+                font-size: 70px;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+                color: white;
+            }
+            .btn {
+                font-size: 20px;
+                font-family: 'Montserrat';
+                padding: 10px 40px;
+                color: azure;
+                background-color: #fed136;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    header {
+        .navbar-brand {
+            text-align: center;
+            padding-left: 5%;
+        }
+        button {
+            text-align: center;
+            padding-right: 5%;
+        }
+        .fixed-top.change-fix-top {
+            padding: 20px 10px;
+            text-align: center;
+        }
+    }
+    #home {
+        padding-bottom: 60px;
+        .title {
+            margin: 0 0;
+            padding-top: 220px;
+            padding-bottom: 130px;
+            i {
+                font-size: 60px;
+                font-family: 'Droid Serif';
+                color: white;
+            }
+            h1 {
+                padding: 50px 0;
+                font-size: 70px;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+                color: white;
+            }
+            .btn {
+                font-size: 20px;
+                font-family: 'Montserrat';
+                padding: 10px 40px;
+                color: azure;
+                background-color: #fed136;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #home {
+        padding-bottom: 80px;
+        .title {
+            margin: 0 0;
+            padding-top: 200px;
+            padding-bottom: 90px;
+            i {
+                font-size: 50px;
+                font-family: 'Droid Serif';
+                color: white;
+            }
+            h1 {
+                padding: 50px 0;
+                font-size: 60px;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+                color: white;
+            }
+            .btn {
+                font-size: 20px;
+                font-family: 'Montserrat';
+                padding: 10px 40px;
+                color: azure;
+                background-color: #fed136;
+            }
+        }
+    }
+    #aboutUs {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        .about-us-head {
+            h1 {
+                font-family: 'Montserrat', serif;
+            }
+            p {
+                font-family: 'Roboto Slab', serif;
+            }
+        }
+        .about-us-content {
+            &:before {
+                top: 0px;
+                bottom: 0;
+                position: absolute;
+                content: " ";
+                width: 3px;
+                background-color: #f1f1f1;
+                margin-top: 120px;
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #home {
+        padding-bottom: 50px;
+        .title {
+            margin: 0 0;
+            padding-top: 100px;
+            padding-bottom: 0px;
+            i {
+                font-size: 25px;
+                font-family: 'Droid Serif';
+                color: white;
+            }
+            h1 {
+                padding: 30px 0;
+                font-size: 40px;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+                color: white;
+            }
+            .btn {
+                font-size: 10px;
+                font-family: 'Montserrat';
+                padding: 10px 30px;
+                color: azure;
+                background-color: #fed136;
+            }
+        }
+    }
+    #contact {
+        #envato {
+            margin-top: 5%;
+            .photos {
+                margin-bottom: 5%;
+                img {
+                    padding: 0% 3%;
+                }
+            }
+        }
+        .map {
+            padding-bottom: 50px;
+            .contact-head {
+                padding: 50px;
+            }
+        }
+    }
+}

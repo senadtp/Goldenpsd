@@ -1,0 +1,477 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(Fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat Regular;
+  src: url(Fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto Light;
+  src: url(Fonts/Roboto-LightItalic.ttf);
+}
+
+html {
+  height: 100%;
+}
+
+html body {
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  z-index: 545;
+  width: 100%;
+}
+
+header .fixed-top {
+  width: 100%;
+  max-width: 1140px;
+  margin: 25px auto;
+  font-size: 23px;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+header .fixed-top #navbarToggleExternalContent {
+  text-align: center;
+}
+
+header .fixed-top #navbarToggleExternalContent .nav-item {
+  padding: 0 10px;
+}
+
+header .fixed-top #navbarToggleExternalContent .nav-item .nav-link {
+  color: #cccfcf;
+}
+
+header .fixed-top.change-fix-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  padding: 0.5% 21%;
+  width: 100%;
+  text-align: center;
+}
+
+#home {
+  background: url("PNG/Background-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-bottom: 180px;
+}
+
+#home .title {
+  margin: 0 0;
+  padding: 250px 0;
+}
+
+#home .title i {
+  font-size: 70px;
+  font-family: 'Droid Serif';
+  color: white;
+}
+
+#home .title h1 {
+  padding: 50px 0;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  color: white;
+}
+
+#home .title .btn {
+  font-size: 25px;
+  font-family: 'Montserrat';
+  padding: 10px 40px;
+  color: azure;
+  background-color: #fed136;
+}
+
+#services {
+  padding: 60px 0;
+}
+
+#services .services-head h1 {
+  font-family: 'Montserrat', serif;
+}
+
+#services .services-content .row .col-md-4 {
+  margin-top: 50px;
+}
+
+#services .services-content .row .col-md-4 h3 {
+  font-family: 'Montserrat', serif;
+}
+
+#services .services-content .row .col-md-4 p {
+  font-family: 'Roboto', serif;
+  font-size: 18px;
+}
+
+#ourPortfolio {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 50px;
+  background-color: #f9f9f9;
+}
+
+#ourPortfolio .our-head h1 {
+  font-family: 'Montserrat', serif;
+}
+
+#ourPortfolio .our-content {
+  padding-top: 50px;
+}
+
+#ourPortfolio .our-content .col-md-4 {
+  margin-bottom: 30px;
+}
+
+#ourPortfolio .our-content .col-md-4 h5 {
+  font-family: 'Montserrat', serif;
+}
+
+#ourPortfolio .our-content .col-md-4 i {
+  font-family: 'Droid Serif';
+  font-size: 18px;
+}
+
+#aboutUs {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+#aboutUs .about-us-head h1 {
+  font-family: 'Montserrat', serif;
+}
+
+#aboutUs .about-us-head p {
+  font-family: 'Roboto Slab', serif;
+}
+
+#aboutUs .about-us-content {
+  position: relative;
+}
+
+#aboutUs .about-us-content:before {
+  top: 0px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #f1f1f1;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+#aboutUs .about-us-content .row {
+  padding: 50px 0;
+}
+
+#aboutUs .about-us-content .row .col-sm-4 {
+  padding: 300px 0;
+}
+
+#aboutUs .about-us-content .row .col-sm-4 p {
+  font-family: 'Roboto', serif;
+  font-size: 18px;
+}
+
+#ourAmazingTeam {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+#ourAmazingTeam .our-head {
+  padding-bottom: 50px;
+}
+
+#ourAmazingTeam .our-head h1 {
+  font-family: 'Montserrat', serif;
+}
+
+#ourAmazingTeam .lead {
+  padding-top: 50px;
+  font-family: 'Roboto';
+}
+
+#contact #envato {
+  margin-top: 50px;
+}
+
+#contact #envato .photos {
+  margin-bottom: 50px;
+}
+
+#contact #envato .photos img {
+  padding: 0 30px;
+}
+
+#contact .map {
+  background-color: #222222;
+  background-image: url("PNG/MapImage.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  position: center fixed;
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-bottom: 100px;
+}
+
+#contact .map .contact-head {
+  padding: 50px;
+}
+
+#contact .map .contact-head h1 {
+  margin-top: 50px;
+  color: azure;
+  font-family: 'Montserrat', serif;
+}
+
+#contact .map .contact-head i {
+  color: azure;
+  margin-bottom: 50px;
+  opacity: 0.5;
+  font-family: 'Roboto Slab';
+}
+
+#contact .map .contact-content .golden-form .form-element .btn {
+  font-size: 25px;
+  font-family: 'Montserrat';
+  padding: 10px 40px;
+  color: azure;
+  background-color: #fed136;
+}
+
+#contact .copyright {
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 1440px) {
+  #home {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  #home .title {
+    margin: 0 0;
+    padding-top: 170px;
+    padding-bottom: 100px;
+  }
+  #home .title i {
+    font-size: 70px;
+    font-family: 'Droid Serif';
+    color: white;
+  }
+  #home .title h1 {
+    padding: 50px 0;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: white;
+  }
+  #home .title .btn {
+    font-size: 25px;
+    font-family: 'Montserrat';
+    padding: 10px 40px;
+    color: azure;
+    background-color: #fed136;
+  }
+  .about-us-content {
+    position: relative;
+  }
+  .about-us-content:before {
+    margin-bottom: 150px;
+  }
+  .about-us-content .row .col-sm-4 {
+    padding: 50px 0;
+  }
+  .about-us-content .row .col-sm-4 p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  #home {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  #home .title {
+    margin: 0 0;
+    padding-top: 110px;
+    padding-bottom: 100px;
+  }
+  #home .title i {
+    font-size: 60px;
+    font-family: 'Droid Serif';
+    color: white;
+  }
+  #home .title h1 {
+    padding: 50px 0;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: white;
+  }
+  #home .title .btn {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    padding: 10px 40px;
+    color: azure;
+    background-color: #fed136;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header .navbar-brand {
+    text-align: center;
+    padding-left: 5%;
+  }
+  header button {
+    text-align: center;
+    padding-right: 5%;
+  }
+  header .fixed-top.change-fix-top {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  #home {
+    padding-bottom: 60px;
+  }
+  #home .title {
+    margin: 0 0;
+    padding-top: 220px;
+    padding-bottom: 130px;
+  }
+  #home .title i {
+    font-size: 60px;
+    font-family: 'Droid Serif';
+    color: white;
+  }
+  #home .title h1 {
+    padding: 50px 0;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: white;
+  }
+  #home .title .btn {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    padding: 10px 40px;
+    color: azure;
+    background-color: #fed136;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #home {
+    padding-bottom: 80px;
+  }
+  #home .title {
+    margin: 0 0;
+    padding-top: 200px;
+    padding-bottom: 90px;
+  }
+  #home .title i {
+    font-size: 50px;
+    font-family: 'Droid Serif';
+    color: white;
+  }
+  #home .title h1 {
+    padding: 50px 0;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: white;
+  }
+  #home .title .btn {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    padding: 10px 40px;
+    color: azure;
+    background-color: #fed136;
+  }
+  #aboutUs {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  #aboutUs .about-us-head h1 {
+    font-family: 'Montserrat', serif;
+  }
+  #aboutUs .about-us-head p {
+    font-family: 'Roboto Slab', serif;
+  }
+  #aboutUs .about-us-content:before {
+    top: 0px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #f1f1f1;
+    margin-top: 120px;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #home {
+    padding-bottom: 50px;
+  }
+  #home .title {
+    margin: 0 0;
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+  #home .title i {
+    font-size: 25px;
+    font-family: 'Droid Serif';
+    color: white;
+  }
+  #home .title h1 {
+    padding: 30px 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: white;
+  }
+  #home .title .btn {
+    font-size: 10px;
+    font-family: 'Montserrat';
+    padding: 10px 30px;
+    color: azure;
+    background-color: #fed136;
+  }
+  #contact #envato {
+    margin-top: 5%;
+  }
+  #contact #envato .photos {
+    margin-bottom: 5%;
+  }
+  #contact #envato .photos img {
+    padding: 0% 3%;
+  }
+  #contact .map {
+    padding-bottom: 50px;
+  }
+  #contact .map .contact-head {
+    padding: 50px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
